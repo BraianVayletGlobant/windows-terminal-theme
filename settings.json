@@ -1,0 +1,87 @@
+{
+  "$schema": "https://aka.ms/terminal-profiles-schema",
+  // Add custom actions and keybindings to this array.
+  // To unbind a key combination from your defaults.json, set the command to "unbound".
+  // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
+  "actions": 
+  [
+      // Copy and paste are bound to Ctrl+Shift+C and Ctrl+Shift+V in your defaults.json.
+      // These two lines additionally bind them to Ctrl+C and Ctrl+V.
+      // To learn more about selection, visit https://aka.ms/terminal-selection
+      {
+          "command": 
+          {
+              "action": "copy",
+              "singleLine": false
+          },
+          "keys": "ctrl+c"
+      },
+      {
+          "command": "paste",
+          "keys": "ctrl+v"
+      },
+      // Press Ctrl+Shift+F to open the search box
+      {
+          "command": "find",
+          "keys": "ctrl+shift+f"
+      },
+      // Press Alt+Shift+D to open a new pane.
+      // - "split": "auto" makes this pane open in the direction that provides the most surface area.
+      // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
+      // To learn more about panes, visit https://aka.ms/terminal-panes
+      {
+          "command": 
+          {
+              "action": "splitPane",
+              "split": "auto",
+              "splitMode": "duplicate"
+          },
+          "keys": "alt+shift+d"
+      }
+  ],
+  "copyFormatting": "none",
+  "copyOnSelect": false,
+  "defaultProfile": "{6e13c3c4-c8b9-5282-b668-7df1ffd0c00e}",
+  "profiles": 
+  {
+      "defaults": {},
+      "list": 
+      [
+          {
+              "colorScheme": "Globant",
+              "cursorShape": "filledBox",
+              "fontFace": "Fira Code",
+              "icon": "https://stayrelevant.globant.com/wp-content/uploads/2019/06/Globant_Short-DarkBG-Color@3x.png",
+              "name": "globant:cmd",
+              "tabTitle": "cmd",
+              "useAcrylic": false
+          }
+      ]
+  },
+  "schemes": 
+  [
+      {
+          "background": "#000000",
+          "black": "#000000",
+          "blue": "#737174",
+          "brightBlack": "#505354",
+          "brightBlue": "#919495",
+          "brightCyan": "#A3A3A6",
+          "brightGreen": "#C1D162",
+          "brightPurple": "#9A9A9D",
+          "brightRed": "#A6D64D",
+          "brightWhite": "#DADBD6",
+          "brightYellow": "#A4D464",
+          "cursorColor": "#BFD732",
+          "cyan": "#62605F",
+          "foreground": "#6F6F6F",
+          "green": "#BFD732",
+          "name": "Globant",
+          "purple": "#747271",
+          "red": "#9DD732",
+          "selectionBackground": "#4D504C",
+          "white": "#C6C5BF",
+          "yellow": "#90D732"
+      }
+  ]
+}
